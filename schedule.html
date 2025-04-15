@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Race Schedule - East Lansing Kart Track</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- FullCalendar CSS from CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css"
-      rel="stylesheet"
-    />
+    <!-- Main site CSS -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Calendar-specific CSS (moved out of HTML) -->
+    <link rel="stylesheet" href="../css/calendar.css" />
   </head>
   <body>
     <!-- Header with Banner, Navigation -->
@@ -35,14 +33,14 @@
       </nav>
     </header>
 
-  <!-- Main Calendar Section -->
-  <main>
-    <section class="races-schedule">
-      <h1>Race Schedule</h1>
-      <!-- The calendar container -->
-      <div id="simple-calendar"></div>
-    </section>
-  </main>
+    <!-- Main Calendar Section -->
+    <main>
+      <section class="races-schedule">
+        <h1>Race Schedule</h1>
+        <!-- The calendar container -->
+        <div id="simple-calendar"></div>
+      </section>
+    </main>
 
     <!-- Footer Section with Sponsors -->
     <footer>
@@ -72,7 +70,7 @@
     </footer>
 
     <!-- External JavaScript files -->
-  <script src="../js/calendar-simple.js"></script>
-  <script src="../js/scripts.js"></script>
+    <script src="../js/calendar-simple.js"></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>
