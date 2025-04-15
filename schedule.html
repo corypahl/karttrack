@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Race Schedule - East Lansing Kart Track</title>
-    <!-- Use absolute path so that the CSS file loads correctly from GitHub Pages -->
-    <link rel="stylesheet" href="/karttrack/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- FullCalendar CSS from CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css"
@@ -36,14 +35,14 @@
       </nav>
     </header>
 
-    <!-- Race Schedule Section -->
-    <main>
-      <section class="schedule">
-        <h1>Race Schedule</h1>
-        <!-- Calendar container -->
-        <div id="calendar"></div>
-      </section>
-    </main>
+  <!-- Main Calendar Section -->
+  <main>
+    <section class="races-schedule">
+      <h1>Race Schedule</h1>
+      <!-- The calendar container -->
+      <div id="simple-calendar"></div>
+    </section>
+  </main>
 
     <!-- Footer Section with Sponsors -->
     <footer>
@@ -72,10 +71,8 @@
       <p>&copy; 2025 East Lansing Kart Track. All rights reserved.</p>
     </footer>
 
-    <!-- FullCalendar JS from CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
-    <!-- Custom calendar initialization script -->
-    <script src="/karttrack/js/calendar-schedule.js"></script>
-    <script src="/karttrack/js/scripts.js"></script>
+    <!-- External JavaScript files -->
+  <script src="../js/calendar-simple.js"></script>
+  <script src="../js/scripts.js"></script>
   </body>
 </html>
