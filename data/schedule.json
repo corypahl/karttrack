@@ -2,19 +2,159 @@
   "_comment": "Available types: ELKT = red, WMKC = green, NonPoints = yellow, Practice = white",
   "events": [
     {
+      "name": "Open Practice",
+      "date": "2025-04-12",
+      "type": "Practice"
+    },
+    {
+      "name": "Open Practice",
+      "date": "2025-04-13",
+      "type": "Practice"
+    },
+    {
+      "name": "Open Practice",
+      "date": "2025-04-19",
+      "type": "Practice"
+    },
+    {
+      "name": "Closed (Easter)",
+      "date": "2025-04-20",
+      "type": "NonPoints"
+    },
+    {
       "name": "ELKT Points Race #1",
       "date": "2025-04-27",
       "type": "ELKT"
     },
     {
-      "name": "WMKC Race #1/Open Practice",
-      "date": "2025-05-17",
-      "type": "WMKC"
+        "name": "Open Practice",
+        "date": "2025-05-03",
+        "type": "Practice"
     },
     {
-      "name": "Open Practice",
-      "date": "2025-04-26",
-      "type": "Practice"
+        "name": "ELKT Points Race #2",
+        "date": "2025-05-04",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-05-10",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-05-11",
+        "type": "Practice"
+    },
+    {
+        "name": "WMKC Race #1",
+        "date": "2025-05-17",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #3",
+        "date": "2025-05-18",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-05-24",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-05-25",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-05-31",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-06-01",
+        "type": "Practice"
+    },
+    {
+        "name": "WMKC Race #2",
+        "date": "2025-06-07",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #4",
+        "date": "2025-06-08",
+        "type": "ELKT"
+    },
+    {
+        "name": "TRACK CLOSED",
+        "date": "2025-06-14",
+        "type": "NonPoints"
+    },
+    {
+        "name": "TRACK CLOSED",
+        "date": "2025-06-15",
+        "type": "NonPoints"
+    },
+    {
+        "name": "WMKC Race #3",
+        "date": "2025-06-21",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #5",
+        "date": "2025-06-22",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-06-28",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-06-29",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-07-05",
+        "type": "Practice"
+    },
+    {
+        "name": "ELKT Points Race #6",
+        "date": "2025-07-06",
+        "type": "ELKT"
+    },
+    {
+        "name": "WMKC Race #4",
+        "date": "2025-07-12",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #7",
+        "date": "2025-07-13",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-07-19",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-07-20",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-07-26",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-07-27",
+        "type": "Practice"
     }
   ]
 }
