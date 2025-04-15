@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>East Lansing Kart Track</title>
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -18,24 +17,30 @@
     />
     
     <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="East Lansing Kart Track Logo" />
+      </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Races</a>
+          <ul class="dropdown-menu">
+            <li><a href="Races/schedule.html">Schedule</a></li>
+            <li><a href="Races/results.html">Results</a></li>
+          </ul>
+        </li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-
-    <div class="header-tagline">
-      <p>Welcome to the <b>East Lansing Kart Track</b> "Real Racing for the Whole Family"</p>
-    </div>
   </header>
 
   <!-- Hero Section -->
   <main>
     <section class="hero">
       <div class="hero-content">
-        <h1>Welcome to KartTrack</h1>
+        <h1>Welcome to the East Lansing Kart Track</h1>
+        <p>"Real Racing for the Whole Family</p>
         <a href="Races/schedule.html" class="btn">View Races</a>
-        <a href="Races/results.html" class="btn">View Results</a>
       </div>
     </section>
     <!-- Additional sections (features, testimonials, etc.) can be added here -->

@@ -38,10 +38,12 @@
   .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
   }
   
   .nav-links li {
     margin-left: 1.5rem;
+    position: relative;
   }
   
   .nav-links a {
@@ -55,13 +57,37 @@
     color: #ff4500; /* Bold accent color */
   }
   
-  /* Header Tagline */
-  .header-tagline {
+  /* Dropdown Styles for Races */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
     background-color: #1a1a1a;
-    text-align: center;
+    list-style: none;
+    min-width: 160px;
+    padding: 0.5rem 0;
+    z-index: 100;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    width: 100%;
+  }
+  
+  .dropdown-menu li a {
     padding: 0.5rem 1rem;
-    font-size: 1.1rem;
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
     color: #f0f0f0;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #ff4500;
   }
   
   /* Hero Section */
