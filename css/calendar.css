@@ -49,25 +49,29 @@
   /* Calendar Header (Navigation Buttons & Month-Year Display) */
   .calendar-header {
     display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: center;  /* Center header items horizontally */
     margin: 10px 0;
+    white-space: nowrap;      /* Prevent wrapping of the header elements */
   }
   
   .calendar-header button {
-    flex: 0 0 auto;
     background-color: #333;
     color: #fff;
     border: none;
     padding: 8px 12px;
     cursor: pointer;
     border-radius: 4px;
+    margin: 0 10px;  /* Provide spacing between the buttons and the header text */
+    flex: none;
   }
   
   .calendar-header h2 {
     flex: 1;
     text-align: center;
     margin: 0;
-    color: #fff; /* Set text color for contrast */
+    color: #fff; /* Ensures high contrast against the dark background */
   }
   
   .calendar-header button:hover {
