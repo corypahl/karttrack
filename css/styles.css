@@ -12,7 +12,17 @@
     line-height: 1.6;
   }
   
-  /* Navigation Styles */
+  /* Header, Banner, and Navigation */
+  .site-header {
+    position: relative;
+  }
+  
+  .header-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
   .navbar {
     background-color: #1a1a1a;
     padding: 1rem 2rem;
