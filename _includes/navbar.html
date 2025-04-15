@@ -1,0 +1,17 @@
+<!-- _includes/navbar.html -->
+<nav class="navbar">
+    <a href="{{ '/' | relative_url }}" class="logo">
+        <img src="{{ '/images/logo.png' | relative_url }}" alt="East Lansing Kart Track Logo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="dropdown">
+        <a href="#">Races</a>
+        <ul class="dropdown-menu">
+            <li><a href="{{ '/Races/schedule.html' | relative_url }}">Schedule</a></li>
+            <li><a href="{{ '/Races/results.html' | relative_url }}">Results</a></li>
+        </ul>
+        </li>
+        <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+    </ul>
+</nav>
