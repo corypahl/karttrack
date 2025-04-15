@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get current date, month, and year
+    // Get current date, month, and year based on local time
     const today = new Date();
     const currentMonth = today.getMonth(); // 0-based: 0 = January
     const currentYear = today.getFullYear();
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     calendarHTML += '</div>';
     calendarContainer.innerHTML = calendarHTML;
     
-    // Define color mapping for event types with updated keys:
+    // Define color mapping for event types:
     // "ELKT" = red, "WMKC" = green, "NonPoints" = yellow, "Practice" = white (with black text)
     const eventTypeColors = {
       "ELKT": "#ff0000",       // Red
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
   
     // Fetch events from schedule.json
-    fetch('/karttrack/data/schedule.json')
+    fetch('data/schedule.json')
       .then(response => response.json())
       .then(data => {
         // Support JSON wrapped with an "events" property
@@ -53,8 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Iterate over events and add them to the corresponding day cell if they match the current month
         events.forEach(event => {
-          // Parse event.date (expected in format YYYY-MM-DD)
-          const eventDate = new Date(event.date);
+          // Parse event.date as a local date by splitting it into parts.
+          const parts = event.date.split("-");
+          // new Date(year, monthIndex, day) creates a local date.
+          const eventDate = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
           if (eventDate.getMonth() === currentMonth && eventDate.getFullYear() === currentYear) {
             const eventDay = eventDate.getDate();
             // Find the corresponding day cell

@@ -3,7 +3,7 @@
   "events": [
     {
       "name": "ELKT Championship Race",
-      "date": "2025-04-01",
+      "date": "2025-04-27",
       "type": "ELKT"
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "name": "Open Practice",
-      "date": "2025-04-18",
+      "date": "2025-04-26",
       "type": "Practice"
     }
   ]
