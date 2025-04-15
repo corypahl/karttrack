@@ -3,24 +3,24 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 1px;
-    background-color: #000; /* Set grid background to black */
+    background-color: #000; /* Black background */
     margin: 20px 0;
   }
   
   .calendar .day-header,
   .calendar .day {
-    background-color: #000; /* Default cell background black */
+    background-color: #000; /* Cells start with a black background */
     padding: 5px;
     text-align: center;
     min-height: 80px;
     position: relative;
     color: #fff; /* Default text color white */
-    border: 1px solid #333; /* Subtle border for cell definition */
+    border: 1px solid #333;
   }
   
   .calendar .day-header {
     font-weight: bold;
-    background-color: #222; /* Slightly lighter for headers */
+    background-color: #222; /* Dark gray for headers */
   }
   
   .calendar .day .date-number {
@@ -38,5 +38,27 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  
+  /* Calendar Header (Navigation Buttons & Month-Year Display) */
+  .calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .calendar-header button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .calendar-header button:hover {
+    background-color: #555;
   }
   
