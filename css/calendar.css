@@ -43,25 +43,31 @@
   /* Highlight today's cell */
   .calendar .day.today {
     background-color: #444; /* A darker background to highlight today's date */
-    border: 2px solid #ff4500; /* Example border color, adjust as desired */
+    border: 2px solid #ff4500; /* Example border color; adjust as desired */
   }
   
   /* Calendar Header (Navigation Buttons & Month-Year Display) */
   .calendar-header {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 10px 0;
   }
   
   .calendar-header button {
+    flex: 0 0 auto;
     background-color: #333;
     color: #fff;
     border: none;
     padding: 8px 12px;
-    margin: 0 10px;
     cursor: pointer;
     border-radius: 4px;
+  }
+  
+  .calendar-header h2 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    color: #fff; /* Set text color for contrast */
   }
   
   .calendar-header button:hover {
