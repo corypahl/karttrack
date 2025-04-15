@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Race Schedule - East Lansing Kart Track</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- FullCalendar CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header with Banner, Navigation, and Tagline -->
+    <header class="site-header">
+      <!-- Banner Image -->
+      <img
+        src="../images/top_logo.gif"
+        alt="East Lansing Kart Track Banner"
+        class="header-banner"
+      />
+
+      <nav class="navbar">
+        <a href="../index.html" class="logo">
+          <img src="../images/logo.png" alt="East Lansing Kart Track Logo" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Races</a>
+            <ul class="dropdown-menu">
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="results.html">Results</a></li>
+            </ul>
+          </li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-tagline">
+        <p>
+          Welcome to the East Lansing Kart Track "Real Racing for the Whole
+          Family"
+        </p>
+      </div>
+    </header>
+
+    <!-- Race Schedule Section -->
+    <main>
+      <section class="races-schedule">
+        <h1>Race Schedule</h1>
+        <!-- Calendar container -->
+        <div id="calendar"></div>
+      </section>
+    </main>
+
+    <!-- Footer Section with Sponsors -->
+    <footer>
+      <div class="sponsors">
+        <h2>Sponsors</h2>
+        <div class="sponsor-links">
+          <a href="https://sponsor1.example.com" target="_blank">
+            <img src="../images/sponsor1.png" alt="Sponsor 1" />
+          </a>
+          <a href="https://sponsor2.example.com" target="_blank">
+            <img src="../images/sponsor2.png" alt="Sponsor 2" />
+          </a>
+          <!-- Add additional sponsor links as needed -->
+        </div>
+        <p>
+          For more information on becoming a sponsor, email
+          <a href="mailto:info@KartTrack.com">info@KartTrack.com</a>
+        </p>
+      </div>
+      <p>&copy; 2025 East Lansing Kart Track. All rights reserved.</p>
+    </footer>
+
+    <!-- FullCalendar JS (from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+    <!-- Inline Script to Initialize Calendar with Event Transformation and Color Mapping -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+
+        // Define color mapping for event types
+        var eventTypeColors = {
+          ELKT: "#ff0000", // Red
+          WMKC: "#008000", // Green
+          NonPoints: "#ffff00", // Yellow
+          Practice: "#ffffff", // White (will use black text for readability)
+        };
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+          headerToolbar: {
+            left: "prev,next today",
+            center: "title",
+            right: "dayGridMonth,timeGridWeek,timeGridDay",
+          },
+          // Fetch events from the external JSON file and transform them
+          events: function (fetchInfo, successCallback, failureCallback) {
+            fetch("../data/schedule.json")
+              .then((response) => response.json())
+              .then((data) => {
+                // Transform each JSON object into a FullCalendar event.
+                // Expect each object to have "name", "date", and "type" properties.
+                const events = data.map((item) => ({
+                  title: item.name,
+                  start: item.date, // Use the "date" as the start date
+                  extendedProps: {
+                    type: item.type,
+                  },
+                }));
+                successCallback(events);
+              })
+              .catch((error) => failureCallback(error));
+          },
+          // Apply colors based on event type
+          eventDidMount: function (info) {
+            var eventType = info.event.extendedProps.type;
+            if (eventType && eventTypeColors[eventType]) {
+              info.el.style.backgroundColor = eventTypeColors[eventType];
+              info.el.style.borderColor = eventTypeColors[eventType];
+              // Use white text unless the event type is "OP" (white), where we'll use black for readability
+              info.el.style.color = eventType === "OP" ? "#000000" : "#ffffff";
+            }
+          },
+        });
+
+        calendar.render();
+      });
+    </script>
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>

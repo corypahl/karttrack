@@ -1,0 +1,25 @@
+{
+  "_comment": "Available types: ELKT = red, WMKC = green, NonPoints = yellow, Practice = white",
+  "events": [
+    {
+      "name": "ELKT Championship Race",
+      "date": "2025-06-01",
+      "type": "ELKT"
+    },
+    {
+      "name": "WMKC Qualifying Round",
+      "date": "2025-06-03",
+      "type": "WMKC"
+    },
+    {
+      "name": "Fun Race",
+      "date": "2025-06-05",
+      "type": "NonPoints"
+    },
+    {
+      "name": "Open Practice",
+      "date": "2025-06-10",
+      "type": "Practice"
+    }
+  ]
+}
