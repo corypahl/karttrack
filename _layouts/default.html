@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
-</head>
-<body>
-  {% include header.html %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+    <!-- Use site.baseurl to correctly resolve the path -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css" />
+  </head>
+  <body>
+    {% include header.html %}
 
-  <main>
-    {{ content }}
-  </main>
+    <main>{{ content }}</main>
 
-  {% include footer.html %}
+    {% include footer.html %}
 
-  <script src="{{ '/js/scripts.js' | relative_url }}"></script>
-</body>
+    <script src="{{ site.baseurl }}/js/scripts.js"></script>
+  </body>
 </html>
