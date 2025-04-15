@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Load header.html into the header-placeholder
-    fetch('header.html')
+    fetch('_includes/header.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('header-placeholder').innerHTML = html;
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   
     // Load footer.html into the footer-placeholder
-    fetch('footer.html')
+    fetch('_includes/footer.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('footer-placeholder').innerHTML = html;
