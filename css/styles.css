@@ -54,7 +54,7 @@
   }
   
   .nav-links a:hover {
-    color: #ff0000; /* Bold accent color */
+    color: #ffffff;
   }
   
   /* Dropdown Styles for Races */
@@ -162,4 +162,3 @@
   .sponsor-links a img:hover {
     transform: scale(1.1);
   }
-  

@@ -18,27 +18,31 @@ document.addEventListener('DOMContentLoaded', function() {
         calendarHeader.textContent = `${monthNames[displayedMonth]} ${displayedYear}`;
       }
   
-      // Build first and last day for the displayed month
+      // Build a date object for the first and last day of the displayed month
       const firstDayDisplayed = new Date(displayedYear, displayedMonth, 1);
       const lastDayDisplayed = new Date(displayedYear, displayedMonth + 1, 0);
       const daysInMonth = lastDayDisplayed.getDate();
       // For a Monday–Sunday calendar, shift the day index
       const startDayIndex = (firstDayDisplayed.getDay() + 6) % 7;
   
-      // Build HTML for calendar grid
+      // Build HTML for the calendar grid:
       let calendarHTML = '<div class="calendar">';
       // Day-of-week headers (Monday to Sunday)
       const dayNamesHeader = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
       for (let i = 0; i < dayNamesHeader.length; i++) {
         calendarHTML += `<div class="day-header">${dayNamesHeader[i]}</div>`;
       }
-      // Empty cells before the first day
+      // Empty cells for days before the first day of the month
       for (let i = 0; i < startDayIndex; i++) {
         calendarHTML += '<div class="day"></div>';
       }
-      // Cells for each day of the month
+      // Cells for each day of the month; add a "today" class if it matches the current local date
       for (let day = 1; day <= daysInMonth; day++) {
-        calendarHTML += `<div class="day" data-day="${day}"><div class="date-number">${day}</div></div>`;
+        let todayClass = '';
+        if (displayedYear === today.getFullYear() && displayedMonth === today.getMonth() && day === today.getDate()) {
+          todayClass = ' today';
+        }
+        calendarHTML += `<div class="day${todayClass}" data-day="${day}"><div class="date-number">${day}</div></div>`;
       }
       calendarHTML += '</div>';
       calendarContainer.innerHTML = calendarHTML;
@@ -55,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
           // Support JSON wrapped with an "events" property
           const events = data.events ? data.events : data;
           events.forEach(event => {
-            // Parse event.date as a local date manually
+            // Parse event.date as a local date by splitting the string
             const parts = event.date.split("-");
             const eventDate = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
             if (eventDate.getMonth() === displayedMonth && eventDate.getFullYear() === displayedYear) {
@@ -71,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   "Practice": "#ffffff"    // White
                 };
                 const bgColor = eventTypeColors[event.type] || "#000000";
-                // Use black text for NonPoints or Practice events (yellow or white backgrounds), white otherwise.
+                // Use black text for NonPoints or Practice events; otherwise, white text.
                 const textColor = (event.type === "NonPoints" || event.type === "Practice") ? "#000000" : "#ffffff";
                 const eventHTML = `<div class="event" style="background-color: ${bgColor}; border: 1px solid ${bgColor}; color: ${textColor};" title="${event.name}">${event.name}</div>`;
                 dayCell.innerHTML += eventHTML;
@@ -84,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
   
-    // Add navigation event listeners only if these elements exist
+    // Navigation button event listeners
     const prevButton = document.getElementById("prev-month");
     if (prevButton) {
       prevButton.addEventListener("click", function() {
@@ -96,7 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
         renderCalendar();
       });
     }
-  
     const nextButton = document.getElementById("next-month");
     if (nextButton) {
       nextButton.addEventListener("click", function() {
@@ -109,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   
-    // Render the calendar initially
+    // Initial render
     renderCalendar();
   });
   

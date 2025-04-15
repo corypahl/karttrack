@@ -40,6 +40,12 @@
     white-space: nowrap;
   }
   
+  /* Highlight today's cell */
+  .calendar .day.today {
+    background-color: #444; /* A darker background to highlight today's date */
+    border: 2px solid #ff4500; /* Example border color, adjust as desired */
+  }
+  
   /* Calendar Header (Navigation Buttons & Month-Year Display) */
   .calendar-header {
     display: flex;
