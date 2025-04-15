@@ -90,15 +90,6 @@
     background-color: #ff0000;
   }
   
-  /* Header Tagline */
-  .header-tagline {
-    background-color: #1a1a1a;
-    text-align: center;
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    color: #f0f0f0;
-  }
-  
   /* Hero Section */
   .hero {
     background: linear-gradient(135deg, #1e1e1e, #343434);
