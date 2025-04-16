@@ -379,3 +379,43 @@ table.class-info-table tbody td {
   margin-top: 1rem;
   font-style: italic;
 }
+
+/* Results Page Styles */
+.results-container {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#sheet-select {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+table.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table.results-table th,
+table.results-table td {
+  border: 1px solid #444;
+  padding: 8px;
+  text-align: left;
+}
+
+table.results-table thead tr {
+  background-color: #222;
+  color: #fff;
+}
+
+table.results-table tbody {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+table.results-table tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
