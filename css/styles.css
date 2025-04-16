@@ -327,7 +327,6 @@ table.gear-ratios th,
 table.gear-ratios td {
   border: 1px solid #444;
   padding: 5px;
-  text-align: left;
 }
 
 table.gear-ratios th {
@@ -341,7 +340,6 @@ table.gear-ratios td {
   color: #f0f0f0;
 }
 
-/* Optional: Center gear ratio values */
 table.gear-ratios td:nth-child(2) {
   text-align: center;
 }
@@ -362,7 +360,7 @@ table.class-info-table td {
 table.class-info-table thead tr {
   background-color: #222;
   color: #ff0000;
-  /* Red text for header, adjust if needed */
+  /* Red header text; adjust as needed */
   text-align: left;
 }
 
@@ -375,30 +373,8 @@ table.class-info-table tbody td {
   vertical-align: top;
 }
 
-/* Gear Ratios Table Styling */
-table.gear-ratios {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 0.5rem;
-}
-
-table.gear-ratios th,
-table.gear-ratios td {
-  border: 1px solid #444;
-  padding: 5px;
-}
-
-table.gear-ratios th {
-  background-color: #222;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-}
-
-table.gear-ratios td {
-  color: #f0f0f0;
-}
-
-table.gear-ratios td:nth-child(2) {
-  text-align: center;
+/* Optional: Footnote styling */
+.class-info-footnote {
+  margin-top: 1rem;
+  font-style: italic;
 }
