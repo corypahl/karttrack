@@ -401,6 +401,24 @@ table.results-table {
   margin-top: 1rem;
 }
 
+table.results-table th {
+  font-weight: bold;
+  color: #ff0000;
+  /* red font */
+  text-align: center;
+}
+
+/* Center every cell in the table */
+table.results-table td {
+  text-align: center;
+}
+
+/* Make first two columns red */
+table.results-table td:nth-child(1),
+table.results-table td:nth-child(2) {
+  color: #ff0000;
+}
+
 table.results-table th,
 table.results-table td {
   border: 1px solid #444;
