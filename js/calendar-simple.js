@@ -67,16 +67,16 @@ document.addEventListener('DOMContentLoaded', function() {
               const dayCell = calendarContainer.querySelector(`.day[data-day="${eventDay}"]`);
               if (dayCell) {
                 // Define color mapping for event types:
-                // "ELKT" = red, "WMKC" = green, "NonPoints" = yellow, "Practice" = white.
+                // "ELKT" = red, "WMKC" = green, "Other" = yellow, "Practice" = white.
                 const eventTypeColors = {
                   "ELKT": "#ff0000",       // Red
                   "WMKC": "#008000",       // Green
-                  "NonPoints": "#ffff00",  // Yellow
+                  "Other": "#ffff00",  // Yellow
                   "Practice": "#ffffff"    // White
                 };
                 const bgColor = eventTypeColors[event.type] || "#000000";
-                // Use black text for NonPoints or Practice events; otherwise, white text.
-                const textColor = (event.type === "NonPoints" || event.type === "Practice") ? "#000000" : "#ffffff";
+                // Use black text for Other or Practice events; otherwise, white text.
+                const textColor = (event.type === "Other" || event.type === "Practice") ? "#000000" : "#ffffff";
                 const eventHTML = `<div class="event" style="background-color: ${bgColor}; border: 1px solid ${bgColor}; color: ${textColor};" title="${event.name}">${event.name}</div>`;
                 dayCell.innerHTML += eventHTML;
               }
