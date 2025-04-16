@@ -106,7 +106,6 @@ body {
   margin-top: 0;
   margin-bottom: .5rem;
   color: #ff0000;
-  /* Bold color accent */
 }
 
 .hero-content p {
@@ -361,7 +360,6 @@ table.class-info-table td {
 table.class-info-table thead tr {
   background-color: #222;
   color: #ff0000;
-  /* Red header text; adjust as needed */
   text-align: left;
 }
 
@@ -404,7 +402,6 @@ table.results-table {
 table.results-table th {
   font-weight: bold;
   color: #ff0000;
-  /* red font */
   text-align: center;
 }
 
