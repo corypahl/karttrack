@@ -425,3 +425,85 @@ table.results-table tbody {
 table.results-table tr:nth-child(even) {
   background-color: #1a1a1a;
 }
+
+/* Ensure images never overflow their container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Wrap long flex containers */
+.sponsor-links,
+.nav-links {
+  flex-wrap: wrap;
+}
+
+/* Tables and calendar become scrollable on small screens */
+table.results-table,
+table.class-info-table,
+.calendar,
+.results-container,
+.about-page {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Mobile first tweaks */
+@media (max-width: 768px) {
+
+  /* Header & Nav */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* Main content padding */
+  .results-container,
+  .about-page,
+  .race-day-schedule {
+    padding: 0.75rem;
+  }
+
+  /* Dropdown full width */
+  #sheet-select {
+    width: 100%;
+  }
+
+  /* Table cell padding */
+  table.results-table th,
+  table.results-table td,
+  table.class-info-table th,
+  table.class-info-table td {
+    padding: 4px;
+    font-size: 0.9rem;
+  }
+
+  /* Footer sponsor links wrap */
+  .sponsor-links {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
