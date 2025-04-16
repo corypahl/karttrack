@@ -391,8 +391,10 @@ table.class-info-table tbody td {
   margin: 1rem 0;
   padding: 0.5rem;
   font-size: 1rem;
+  display: block;
 }
 
+/* Results Table Styling */
 table.results-table {
   width: 100%;
   border-collapse: collapse;
