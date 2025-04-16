@@ -103,7 +103,7 @@ body {
 
 .hero-content h1 {
   font-size: 3rem;
-  margin-top: .5rem;
+  margin-top: 0;
   margin-bottom: .5rem;
   color: #ff0000;
   /* Bold color accent */
