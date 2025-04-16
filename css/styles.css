@@ -98,11 +98,12 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .hero-content h1 {
   font-size: 3rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   color: #ff0000;
   /* Bold color accent */
