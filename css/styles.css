@@ -315,3 +315,90 @@ footer {
   color: #f0f0f0;
   line-height: 1.6;
 }
+
+/* Gear Ratios Table Styling */
+table.gear-ratios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+table.gear-ratios th,
+table.gear-ratios td {
+  border: 1px solid #444;
+  padding: 5px;
+  text-align: left;
+}
+
+table.gear-ratios th {
+  background-color: #222;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+table.gear-ratios td {
+  color: #f0f0f0;
+}
+
+/* Optional: Center gear ratio values */
+table.gear-ratios td:nth-child(2) {
+  text-align: center;
+}
+
+/* Class Information Table Styling */
+table.class-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table.class-info-table th,
+table.class-info-table td {
+  border: 1px solid #444;
+  padding: 8px;
+}
+
+table.class-info-table thead tr {
+  background-color: #222;
+  color: #ff0000;
+  /* Red text for header, adjust if needed */
+  text-align: left;
+}
+
+table.class-info-table tbody {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+table.class-info-table tbody td {
+  vertical-align: top;
+}
+
+/* Gear Ratios Table Styling */
+table.gear-ratios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+table.gear-ratios th,
+table.gear-ratios td {
+  border: 1px solid #444;
+  padding: 5px;
+}
+
+table.gear-ratios th {
+  background-color: #222;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+table.gear-ratios td {
+  color: #f0f0f0;
+}
+
+table.gear-ratios td:nth-child(2) {
+  text-align: center;
+}
