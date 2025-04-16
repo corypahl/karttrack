@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Favicon: Silhouette of a Person Driving a Go-Kart
+  This vector image is designed to be simple yet recognizable.
+  Save this file as favicon.svg and use it as your site’s favicon.
+-->
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 64 64" 
+  width="64" 
+  height="64">
+  <!-- Wheels -->
+  <circle cx="16" cy="48" r="4" fill="black" />
+  <circle cx="48" cy="48" r="4" fill="black" />
+
+  <!-- Go-Kart Body -->
+  <path d="M10 48 L20 32 L44 32 L54 48 Z" fill="black" />
+
+  <!-- Driver Silhouette -->
+  <!-- Head -->
+  <circle cx="32" cy="26" r="3" fill="black" />
+  <!-- Body/Seat -->
+  <path d="M29 29 L35 29 L34 36 L30 36 Z" fill="black" />
+  
+  <!-- Steering Wheel (Optional Detail) -->
+  <circle cx="32" cy="30" r="2" fill="black" />
+</svg>

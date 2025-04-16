@@ -1,0 +1,88 @@
+/* Simple Calendar Styles */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #000;
+    /* Black background */
+    margin: 20px 0;
+}
+
+.calendar .day-header,
+.calendar .day {
+    background-color: #000;
+    /* Cells start with a black background */
+    padding: 5px;
+    text-align: center;
+    min-height: 80px;
+    position: relative;
+    color: #fff;
+    /* Default text color white */
+    border: 1px solid #333;
+}
+
+.calendar .day-header {
+    font-weight: bold;
+    background-color: #222;
+    /* Dark gray for headers */
+}
+
+.calendar .day .date-number {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.calendar .day .event {
+    display: block;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-top: 2px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Highlight today's cell */
+.calendar .day.today {
+    background-color: #444;
+    /* A darker background to highlight today's date */
+    border: 2px solid #ff4500;
+    /* Example border color; adjust as desired */
+}
+
+/* Calendar Header (Navigation Buttons & Month-Year Display) */
+.calendar-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* Center header items horizontally */
+    margin: 10px 0;
+    white-space: nowrap;
+    /* Prevent wrapping */
+}
+
+.calendar-header button {
+    flex: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.calendar-header h2 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+
+.calendar-header button:hover {
+    background-color: #555;
+}

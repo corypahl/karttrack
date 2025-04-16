@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <base href="/karttrack/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - East Lansing Kart Track</title>
+    <title>Race Schedule - East Lansing Kart Track</title>
+    <!-- Main site styles and calendar-specific styles -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/calendar.css" />
   </head>
   <body>
     <!-- Header with Banner, Navigation -->
@@ -14,7 +17,6 @@
         alt="East Lansing Kart Track Banner"
         class="header-banner"
       />
-
       <nav class="navbar">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -31,25 +33,53 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <main>
-      <section class="contact-section">
-        <div class="contact-info">
-          <h1>Contact Us</h1>
-          <p>
-            Please feel free to reach out to us with any inquiries or for more
-            information.
-          </p>
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:info@karttrack.com">info@karttrack.com</a>
-          </p>
-          <p><strong>Phone:</strong> (517) 282-9387 (Kevin Haun)</p>
-          <p>
-            <strong>Address:</strong> East Lansing Kart Track 15933 Chandler Rd.
-            East Lansing, MI 48823
-          </p>
+    <!-- Race Day Schedule Section -->
+    <section class="race-day-schedule">
+      <div class="schedule-intro">
+        <p class="disclaimer"><em>Schedule may be subject to change.</em></p>
+        <p class="notes">
+          *On Saturdays that indicate a WMKC (West Michigan Kart Club) race,
+          there will be open practice between the races and after the races
+          until 5pm.
+        </p>
+        <p class="notes">
+          *We will open on weekends in November &amp; December (weather
+          permitting), as posted on our Facebook page &amp; website.
+        </p>
+      </div>
+      <div class="schedule-days">
+        <div class="schedule-day">
+          <h3>Saturday</h3>
+          <ul>
+            <li>Practice opens at 10:00am</li>
+            <li>Practice closes at 5:00pm</li>
+          </ul>
         </div>
+        <div class="schedule-day">
+          <h3>Sunday</h3>
+          <ul>
+            <li>Track opens at 8:00am</li>
+            <li>Practice begins at 9:00am</li>
+            <li>Registration closes at 11:00am</li>
+            <li>Drivers meeting at 11:30am</li>
+            <li>Races begin at 12:00pm</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Calendar Section -->
+    <main>
+      <section class="races-schedule">
+        <h1>Race Schedule</h1>
+        <!-- Calendar Navigation Header -->
+        <section class="calendar-header">
+          <button id="prev-month">Previous</button>
+          <h2 id="calendar-month-year"></h2>
+          <button id="next-month">Next</button>
+        </section>
+        <!-- The calendar container -->
+        <div id="simple-calendar"></div>
       </section>
     </main>
 
@@ -79,5 +109,8 @@
       </div>
       <p>&copy; 2025 East Lansing Kart Track. All rights reserved.</p>
     </footer>
+
+    <!-- External JavaScript file for calendar navigation -->
+    <script src="js/calendar-simple.js"></script>
   </body>
 </html>

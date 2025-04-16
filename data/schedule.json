@@ -1,0 +1,305 @@
+{
+  "_comment": "Available types: ELKT = red, WMKC = green, Other = yellow, Practice = white",
+  "events": [
+    {
+      "name": "Open Practice",
+      "date": "2025-04-12",
+      "type": "Practice"
+    },
+    {
+      "name": "Open Practice",
+      "date": "2025-04-13",
+      "type": "Practice"
+    },
+    {
+      "name": "Open Practice",
+      "date": "2025-04-19",
+      "type": "Practice"
+    },
+    {
+      "name": "Closed (Easter)",
+      "date": "2025-04-20",
+      "type": "Other"
+    },
+    {
+      "name": "ELKT Points Race #1",
+      "date": "2025-04-27",
+      "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-05-03",
+        "type": "Practice"
+    },
+    {
+        "name": "ELKT Points Race #2",
+        "date": "2025-05-04",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-05-10",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-05-11",
+        "type": "Practice"
+    },
+    {
+        "name": "WMKC Race #1",
+        "date": "2025-05-17",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #3",
+        "date": "2025-05-18",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-05-24",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-05-25",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-05-31",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-06-01",
+        "type": "Practice"
+    },
+    {
+        "name": "WMKC Race #2",
+        "date": "2025-06-07",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #4",
+        "date": "2025-06-08",
+        "type": "ELKT"
+    },
+    {
+        "name": "TRACK CLOSED",
+        "date": "2025-06-14",
+        "type": "Other"
+    },
+    {
+        "name": "TRACK CLOSED",
+        "date": "2025-06-15",
+        "type": "Other"
+    },
+    {
+        "name": "WMKC Race #3",
+        "date": "2025-06-21",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #5",
+        "date": "2025-06-22",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-06-28",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-06-29",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-07-05",
+        "type": "Practice"
+    },
+    {
+        "name": "ELKT Points Race #6",
+        "date": "2025-07-06",
+        "type": "ELKT"
+    },
+    {
+        "name": "WMKC Race #4",
+        "date": "2025-07-12",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #7",
+        "date": "2025-07-13",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-07-19",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-07-20",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-07-26",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-07-27",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-08-01",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-08-02",
+        "type": "Practice"
+    },
+    {
+        "name": "Dinner/Music",
+        "date": "2025-08-02",
+        "type": "Other"
+    },
+    {
+        "name": "Bobby Haun Memorial Race (#8)",
+        "date": "2025-08-03",
+        "type": "ELKT"
+    },
+    {
+        "name": "WMKC Race #5",
+        "date": "2025-08-09",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #9",
+        "date": "2025-08-10",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-08-16",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-08-17",
+        "type": "Practice"
+    },
+    {
+        "name": "WMKC Race #6",
+        "date": "2025-08-23",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #10",
+        "date": "2025-08-24",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-08-30",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-08-31",
+        "type": "Practice"
+    },
+    {
+        "name": "WMKC Race #7",
+        "date": "2025-09-06",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #11",
+        "date": "2025-09-07",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-09-13",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-09-14",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-09-20",
+        "type": "Practice"
+    },
+    {
+        "name": "WMKC Rain Date",
+        "date": "2025-09-20",
+        "type": "WMKC"
+    },
+    {
+        "name": "ELKT Points Race #12",
+        "date": "2025-09-21",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-09-27",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-09-28",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-10-04",
+        "type": "Practice"
+    },
+    {
+        "name": "Season Championship (Double Points)",
+        "date": "2025-10-05",
+        "type": "ELKT"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-10-11",
+        "type": "Practice"
+    },
+    {
+        "name": "Fun Race/Rain Date",
+        "date": "2025-10-12",
+        "type": "Other"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-10-18",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-10-19",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-10-25",
+        "type": "Practice"
+    },
+    {
+        "name": "Open Practice",
+        "date": "2025-10-26",
+        "type": "Practice"
+    }
+  ]
+}
